@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+        <div>
+
+        
+            <h2>Formulario de compra</h2>
+
+            <input type="text" placeholder="Nombres completo">
+            <input type="text" placeholder="Apellidos completos">
+            <select id="tipoDocumento" name="tipoDocumento">
+                <option value="id">Tipo de documento</option>
+                <option value="cc">Cédula de Ciudadanía</option>
+                <option value="ce">Cédula de Extranjería</option>
+                <option value="ti">Tarjeta de Identidad</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="otro">Otro</option>
+              </select>
+            <input type="text" placeholder="Numero de identificacion">
+            <input type="text" placeholder="Telefono(opcional)">
+            <input type="text" placeholder="Celular">
+            <input type="text" placeholder="Correo electronico">
+            <input type="text" placeholder="Dirección">
+
+            <h4>Metodos de pago:</h4>
+
+            <p>Forma de pago</p>
+            <select id="Forma_de_pago" name="pago">
+                <option value="text">Pago único.</option>
+                <option value="text">Crédito (financiación).</option>
+
+                <p>Información para financiación (si aplica):</p>
+                <select id="financiacion" name="pago">
+                    <option value="text">Monto de la cuota inicial.
+                    </option>
+                    <option value="text">Plazo (meses o años).
+                    </option>
+                <p>agrupa en un pdf, los siguientes datos y subelos:
+                    Documento de identidad.
+                    Comprobante de ingresos (si aplica para financiación).
+                    Licencia de conducción
+                </p>
+                <label for="archivo">Subir archivo pdf:</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf">
+
+                    <h4>Datos de tarjeta de crédito/débito (si aplica)</h4>
+                    <input type="text" placeholder="Nombre del titular.">
+                    <input type="text" placeholder="Número de tarjeta.">
+                    <input type="date" id="fechaExpiracion" name="fechaExpiracion" min="1900-01-01" max="2025-12-31">
+                    <input type="text" placeholder="Código de seguridad.">
+                    
+                
+                    
+
+            <h4>Datos del  producto:</h4>
+            <p>Modelo del carro:</p>
+            <p>Año:</p>
+            <p>Color del carro:</p>
+            <p>Versión o configuración:</p>
+            <p>Precio total:</p>
+
+            <div>
+                <h4>Términos y Condiciones y la Política de Privacidad de CARS</h4>
+                <p>
+                    Al utilizar el sitio web de CARS, aceptas que tus datos personales sean recopilados para procesar compras y proporcionarte servicios. Nos comprometemos a proteger tu información y no la compartiremos con terceros, salvo en casos necesarios, como con proveedores de servicios de pago o entidades financieras. Las compras se validan una vez se confirme el pago, y no se aceptan cancelaciones o devoluciones, excepto por defectos de fábrica. Todos los vehículos incluyen una garantía limitada, cuyo detalle recibirás en la entrega. CARS se reserva el derecho de modificar los Términos y Condiciones en cualquier momento. Para más detalles, consulta nuestra Política de Privacidad, donde explicamos cómo usamos, protegemos y compartimos tu información personal. Si tienes dudas, contáctanos a <b> tucars@cars.com</b> <a href="/frontend/index/terminos_y_privacidad.html">ver mas...</a>
+                </p>
+
+            </p>
+
+            si estas de acuerdo con los terminos y condiciones y la Política de privacidad de CARS entonces marca la casilla de acepto
+                <p>
+
+                </p>
+
+                <input type="checkbox" name="option1" value="opcion1" required>
+               <label for="checkbox">Acepto</label>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
